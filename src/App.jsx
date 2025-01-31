@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.css';
+import Header from './Components/Header';
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Portfolio from "./Components/Portfolio";
+import Contact from './Components/Contact';
+const siteProps = {
+  name : "Badeti Bindhu",
+  title :"Web Developer",
+  email :"badetibindhu2003@gmail.com",
+  gitHub:"BadetiBindhu",
+  instagram :"BadetiBindhu",
+  linkedIn :"BindhuBadeti",
+  youtube:"BinduBadeti"
+}
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{
+      margin:"0px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight:"100vh"}}>
+      <Header/>
+      <section id="home"><Home {...siteProps}/></section>
+      <section id="about"><About/></section>
+      <section id="skills"><Skills/></section>
+      <section id="portfolio"><Portfolio/></section>
+      <section id="contact"><Contact {...siteProps} /></section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
 
-export default App
+export default App;

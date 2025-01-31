@@ -1,0 +1,75 @@
+/* Full-Screen Container */
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background:rgba(128, 128, 128, 0.021); /* Gray gradient */
+    background-color: linear-gradient(from bottom,rgba(235, 235, 26, 0.74),rgba(255, 0, 0, 0.301));
+  }
+  .animated-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+  }   
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 0.4;
+    }
+  }
+  
+  /* Content Section */
+  .content {
+  color:black;
+    z-index: 1;
+  }
+  
+  /* Name Styling */
+  .name {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.699),rgba(128, 128, 128, 0.199));
+    text-shadow:1px 1px 2px rgba(0, 0, 0, 0.705);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  
+  /* Role Styling */
+  .role {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #161616;
+    opacity: 0.9;
+  }
+  .computer-img {
+    width: 80%;
+    max-width: 500px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 0 25px white ;
+    border-radius:10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .name {
+      font-size: 3rem;
+    }
+    .role {
+      font-size: 1.5rem;
+    }
+  }
+  

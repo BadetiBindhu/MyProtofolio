@@ -1,0 +1,24 @@
+.footer{
+  margin:0;
+  bottom:0;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#2c3e50;
+  padding:1rem 1rem;
+}
+.iconsDiv{
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
+}
+.socialIcons{
+    width:42px;
+    height:34px;
+    border-radius:10px;
+}
+.socialIcons:hover{
+  padding:1px;
+  box-shadow:0 0 10px white;
+}

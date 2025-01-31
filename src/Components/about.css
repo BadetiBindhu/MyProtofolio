@@ -1,0 +1,58 @@
+/* about.css */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:100vw;
+    background: #dbd0b185;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    cursor:pointer;
+  }
+  .about-container:hover{
+    transform: translate(10px,20px);
+    padding:10px;
+  }
+  .about-content {
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(240, 225, 14, 0.274);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(32, 32, 32, 0.945);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    
+  }
+  
+  .about-description span {
+    color: black;
+    font-weight: bold;
+  }
+  
